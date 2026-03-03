@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="A creative frontend developer portfolio showcasing projects and skills.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <nav class="navbar glass">
+        <div class="logo">Port<span>folio.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle Theme">
+            <i data-lucide="moon"></i>
+        </button>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="badge">Frontend Developer</span>
+                <h1>Crafting Digital <br><span class="gradient-text">Experiences</span></h1>
+                <p>Building beautiful, responsive, and user-friendly web interfaces with modern technologies.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-card glass">
+                    <div class="window-controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="key">name</span>: <span class="string">'Alexa'</span>,
+  <span class="key">skills</span>: [<span class="string">'React'</span>, <span class="string">'CSS'</span>, <span class="string">'Node'</span>],
+  <span class="key">passion</span>: <span class="string">'UI/UX Design'</span>
+};</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card glass">
+                        <i data-lucide="code-2" class="icon"></i>
+                        <h3>Development</h3>
+                        <p>Clean code and scalable architecture are my top priorities.</p>
+                    </div>
+                    <div class="about-card glass">
+                        <i data-lucide="palette" class="icon"></i>
+                        <h3>Design</h3>
+                        <p>I love creating visually stunning and accessible interfaces.</p>
+                    </div>
+                    <div class="about-card glass">
+                        <i data-lucide="rocket" class="icon"></i>
+                        <h3>Performance</h3>
+                        <p>Optimizing for speed and smooth user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass">
+                        <div class="project-image" style="background: linear-gradient(45deg, #4f46e5, #ec4899);"></div>
+                        <div class="project-info">
+                            <h3>Project Nebula</h3>
+                            <p>A futuristic e-commerce dashboard with real-time analytics.</p>
+                            <div class="tags">
+                                <span>React</span><span>Three.js</span>
+                            </div>
+                            <a href="#" class="link-arrow">View Project <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="project-card glass">
+                        <div class="project-image" style="background: linear-gradient(45deg, #06b6d4, #3b82f6);"></div>
+                        <div class="project-info">
+                            <h3>Ocean UI</h3>
+                            <p>A comprehensive design system for modern web applications.</p>
+                            <div class="tags">
+                                <span>Figma</span><span>CSS</span>
+                            </div>
+                            <a href="#" class="link-arrow">View Project <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Project 3 -->
+                    <article class="project-card glass">
+                        <div class="project-image" style="background: linear-gradient(45deg, #8b5cf6, #d946ef);"></div>
+                        <div class="project-info">
+                            <h3>Neon Chat</h3>
+                            <p>Real-time messaging app with glassmorphism aesthetics.</p>
+                            <div class="tags">
+                                <span>Socket.io</span><span>Vue</span>
+                            </div>
+                            <a href="#" class="link-arrow">View Project <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section footer-section">
+            <div class="container glass footer-glass">
+                <h2>Let's Work Together</h2>
+                <p>Have a project in mind? Let's build something amazing.</p>
+                <a href="mailto:hello@example.com" class="btn primary">Get in Touch</a>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
